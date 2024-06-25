@@ -1,0 +1,180 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Didactic+Gothic&display=swap');
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and default font styles */
+body {
+    font-family: 'Didactic Gothic', sans-serif;
+    color: #333;
+    background-color: #e6eaf0; /* Light blue background */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-title {
+    font-family: 'Gloock', serif;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #2c3e50; /* Dark blue */
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #2c3e50; /* Dark blue */
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+}
+
+h1, h2 {
+    font-family: 'Gloock', serif;
+    color: #2c3e50; /* Dark blue */
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+/* Button and link styles */
+nav ul li a,
+button,
+.menu-section h3 {
+    display: inline-block;
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav ul li a:hover,
+button:hover,
+.menu-section h3:hover {
+    background-color: white;
+    color: #2c3e50; /* Dark blue */
+}
+
+.menu-section h3 {
+    padding: 0.5rem 1rem;
+    cursor: default;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue */
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 2px solid #2c3e50; /* Dark blue */
+    border-radius: 5px;
+}
+
+button {
+    align-self: flex-start;
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    footer {
+        position: static;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+}
